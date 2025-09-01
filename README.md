@@ -79,7 +79,7 @@ class Assistant(Agent):
 4. Import the TTS Plugin and implement it in your Agent
 
     ```py
-    from custom_tts.PiperTTSPluginLocal import PiperTTSPlugin
+    from custom_tts.PiperTTSPlugin import PiperTTSPlugin
 
     load_dotenv(dotenv_path=".env.local")
     logger = logging.getLogger("voice-agent")
