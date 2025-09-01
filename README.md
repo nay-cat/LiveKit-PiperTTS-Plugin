@@ -57,7 +57,7 @@ class Assistant(Agent):
     def __init__(self) -> None:
         super().__init__(
             instructions="sample assistant to test piper",
-            stt=deepgram.STT(model="nova-2",  language="es",   ),
+            stt=deepgram.STT(model="nova-2",  language="es"),
             llm=openai.LLM.with_deepseek(model="deepseek-chat",  temperature=0.7),
             # (Examples) Piper executable in piper/ folder, models in models/ folder 
             tts=PiperTTSPlugin("piper/piper.exe", "models/es_ES-carlfm-x_low.onnx", 1, 22500),
@@ -88,7 +88,7 @@ class Assistant(Agent):
         def __init__(self) -> None:
             super().__init__(
                 instructions="sample assistant to test piper",
-                stt=deepgram.STT(model="nova-2",  language="es",   ),
+                stt=deepgram.STT(model="nova-2",  language="es"),
                 llm=openai.LLM.with_deepseek(model="deepseek-chat",  temperature=0.7),
                 tts=PiperTTSPlugin(
                     model="es_ES-carlfm-x_low.onnx",
