@@ -41,7 +41,7 @@ tts=PiperTTSPlugin(
 
 **To implement Piper as subprocess, you must install Piper on your system and the model you are going to use**
 
-1. Install Piper TTS executable (https://github.com/rhasspy/piper/releases)¹
+1. Install Piper TTS executable (https://github.com/rhasspy/piper/releases) ¹
     - You must download the version corresponding to your operating system, unzip the files, and save them in a location you know.
 2. Download a Piper TTS model (https://huggingface.co/rhasspy/piper-voices/tree/main)
     - You need to save the .onnx and the .onnx.json files in a location you know
