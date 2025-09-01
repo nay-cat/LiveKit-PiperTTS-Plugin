@@ -3,8 +3,8 @@
 > This plugin is a quick implementation created in a short time to achieve LiveKit + PiperTTS functionality.
 
 ## Two ways to use it:
-- Using Piper as subprocess (PiperTTSPluginLocal.py)
-- Using piper-tts python package (PiperTTSPlugin.py)
+- Using Piper as subprocess ([PiperTTSPluginLocal.py](https://github.com/nay-cat/LiveKit-PiperTTS-Plugin/blob/main/src/custom_tts/PiperTTSPluginLocal.py))
+- Using piper-tts python package ([PiperTTSPlugin.py](https://github.com/nay-cat/LiveKit-PiperTTS-Plugin/blob/main/src/custom_tts/PiperTTSPlugin.py))
 
 ## You should know
 - Streaming is disabled, so the plugin will generate all the audio before playing it, which may add a few milliseconds of delay. You can look at [piper1-gpl python api docs](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md) and **PiperVoice.synthesise** to see how it could be implemented.
@@ -45,7 +45,7 @@ tts=PiperTTSPlugin(
     - You must download the version corresponding to your operating system, unzip the files, and save them in a location you know.
 2. Download a Piper TTS model (https://huggingface.co/rhasspy/piper-voices/tree/main)
     - You need to save the .onnx and the .onnx.json files in a location you know
-3. Download PiperTTSPluginLocal.py and place it within your project, for example, within a custom_tts/PiperTTSPluginLocal.py folder.
+3. Download [PiperTTSPluginLocal.py](https://github.com/nay-cat/LiveKit-PiperTTS-Plugin/blob/main/src/custom_tts/PiperTTSPluginLocal.py) and place it within your project, for example, within a custom_tts/PiperTTSPluginLocal.py folder.
 4. Import the TTS Plugin and implement it in your Agent
 ```py
 from custom_tts.PiperTTSPluginLocal import PiperTTSPlugin
@@ -75,7 +75,7 @@ class Assistant(Agent):
     ```py
     python -m piper.download_voices es_ES-carlfm-x_low
     ```
-3. Download PiperTTSPlugin.py and place it within your project, for example, within a custom_tts/PiperTTSPlugin.py folder.
+3. Download [PiperTTSPlugin.py](https://github.com/nay-cat/LiveKit-PiperTTS-Plugin/blob/main/src/custom_tts/PiperTTSPlugin.py) and place it within your project, for example, within a custom_tts/PiperTTSPlugin.py folder.
 4. Import the TTS Plugin and implement it in your Agent
 
     ```py
