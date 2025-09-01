@@ -1,4 +1,4 @@
-# [piper1-gpl](https://github.com/OHF-Voice/piper1-gpl/tree/main= (piper-tts) LiveKit Integration
+# [piper1-gpl](https://github.com/OHF-Voice/piper1-gpl/tree/main) (piper-tts) LiveKit Integration
 
 > This plugin is a quick implementation created in a short time to achieve LiveKit + PiperTTS functionality.
 
